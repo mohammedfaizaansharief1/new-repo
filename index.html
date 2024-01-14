@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,4 +11,195 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Website</title>
+    <style>
+        table, tr, th, td, tbody, thead{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section id="Home">
+        <caption>--Home Section</caption>
+        <h1>&#127758;Welcome to SkyTravel - Your Journey Begins Here! &#9992;</h1>
+        <p>Are you ready to embark on a seamless journey of discovering new horizons? Look no further! SkyTravel is your ultimate destination for all your flight booking needs. Whether you're an avid explorer, a business traveler, or planning a much-needed vacation, we're here to make your travel dreams take flight.</p>
+        <img src="https://oswalairtravels.com/images/oswal-flight.jpg" alt="Flight Booking Website" align="right">
+    </section>
+    <section id="purpose">
+        <caption>--website's purpose</caption>
+        <h4>&#9992; Flight Booking Made Effortless:</h4>
+        <p>Ready to jet off to your next adventure? SkyTravel simplifies the flight booking process. Whether you're planning a family vacation, a business trip, or a spontaneous getaway, we've got you covered. With a wide selection of airlines and fare options, finding the perfect flight is just a few clicks away. Enjoy a seamless and user-friendly experience that puts you in control of your travel plans.</p>
+        <h4>&#11088;Exploring Uncharted Horizons:</h4>
+        <p>Beyond just booking flights, SkyTravel is your gateway to discovering new destinations. Browse through our comprehensive travel guides and curated recommendations to uncover hidden gems, cultural wonders, and breathtaking landscapes around the world. Fuel your wanderlust with inspiration that will guide your journey to places you've only dreamed of. Whether you're a seasoned traveler or a first-time explorer, our destination insights are here to spark your imagination.</p>
+        <h3 align="center"><b> Experience the Joy of Travel with SkyTravel Today! &#127758; &#9992;</b></h3>
+    </section>
+    <section id="cust_review">
+        <caption>--customer review section</caption>
+        <h1>Customer Review's</h1>
+        <div>
+            <h3>1. John D  - Business Traveler</h3>
+            <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt="Customer_1" height="250px" width="350px">
+            <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p>"As a frequent flyer, I rely on SkyTravel for all my business trips. The convenience of finding and booking flights quickly is unbeatable. Plus, their customer support team has always been responsive and helpful. Highly recommended!"</p>
+        </div>
+        <div>
+            <h3>2. David S. - First-Time Traveler</h3>
+            <img src="https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg" alt="Customer_1" height="250px" width="350px">
+            <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p>"Being a first-time traveler, I was nervous about booking flights and navigating a new city. SkyTravel's website not only made booking stress-free but also gave me a comprehensive guide to the destination. I felt confident and well-prepared – a fantastic resource for rookies like me!"</p>
+        </div>
+    </section>
+    <section id="flight_experience">
+        <caption>--flight experiences</caption>
+        <h1>&#x2708;  Passenger stories:Real Experiences with SkyTravel Flights</h1>
+        <h4>Alexandra R. - Paris Bound &nbsp;&#11088;&#11088;&#11088;&#11088;&#11088;</h4>
+        <p>"My flight with SkyTravel to Paris was an absolute delight. The booking process was a breeze, and I managed to snag a great deal. The flight itself was comfortable, with attentive staff and a smooth ride. SkyTravel truly set the tone for my amazing Parisian getaway!"</p>
+        <h4>Emily S. - Family Adventure &nbsp;&#11088;&#11088;&#11088;&#11088;&#11088;</h4>
+        <p>"Taking my family to Disney World was a dream come true, made possible by SkyTravel. The flights were well-timed for us, and the extra assistance for our kids made the journey smooth. The smiles on my children's faces were worth it all. Thank you, SkyTravel, for a memorable family vacation!"</p>
+    </section>
+    <section id="review_form">
+        <caption>--review form</caption>
+        <h1>Submit review below</h1>
+        <form action="review.js">
+            <label for="username">Username:</label>&nbsp;
+            <input type="text" placeholder="Enter your username"><br>
+            <label for="rating">Ratings:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" placeholder="out of 5"><br>
+            <label for="flight_number">Flight Number:</label>
+            <input type="number" name="flight_number" id="flight_number" placeholder="Enter Flight Number"><br>
+            <label for="Flight_date">Flight Date:</label>&nbsp;
+            <input type="date" name="Flight_date" id="Flight_date" placeholder="Enter Flight Date"><br>
+            <label for="Review">Enter Review: </label>
+            <textarea name="Review" id="Review" cols="30" rows="10" placeholder="Enter the review in brief"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section><br>
+    <section class="flight_section">
+        <caption>--Flights Section</caption><br>
+        <h1>Find and Book Flights</h1>
+        <label for="dept.destination">Departure Destination: </label>
+        <select name="dept.destination" id="dept.destination">
+            <option>Select Your Destination</option>
+            <option value="Maldiv">Maldiv</option>
+            <option value="New York City">New York City</option>
+        </select>
+        <label for="arri_destination">Arrival Destination</label>
+        <select name="arri_destination" id="arri_destination">
+            <option>Select Your Destination</option>
+            <option value="Agra, India">Agra, India</option>
+            <option value="Singapore">Singapore</option>
+        </select><br>
+        <label for="dept_date">Departure Date:</label>
+        <input type="date" name="dept_date" id="dept_date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="arri_date">Arrival Date:</label>
+        <input type="date" name="dept_date" id="dept_date"><br>
+        <label for="Passengers">Enter Number of Passengers:</label>
+        <input type="number" placeholder="Enter No of Passengers"><br>
+        <label for="pricing">Filter Flights based on Price: </label>2000
+        <input type="range" name="pricing" id="pricing" min="2000" max="500000">5000000<br>
+        <label for="classoftravel">Class Of Travel:</label>
+        <select name="classoftravel" id="classoftravel">
+            <option>Select Class Of Travel</option>
+            <option value="first">First Class</option>
+            <option value="Business">Business Class</option>
+            <option value="Economy">Economy Class</option>
+        </select><br>
+        <button type="submit">Submit</button>
+    </section><br>
+    <section class="flighttimings">
+        <caption>--Flight timing section</caption>
+        <h2>Flight Timings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Flight Number</th>
+                    <th>Departure Time</th>
+                    <th>Arrival Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DTK253</td>
+                    <td>08:00 A.M</td>
+                    <td>09:00 P.M</td>
+                </tr>
+                <tr>
+                    <td>DTK799</td>
+                    <td>06:50 P.M</td>
+                    <td>08:00 P.M</td>
+                </tr>
+                <tr>
+                    <td>AWN004</td>
+                    <td>18:50 P.M</td>
+                    <td>06:25 A.M</td>
+                </tr>
+            </tbody>
+        </table>
+    </section><br>
+    <section id="about_us">
+        <caption>--About us section</caption>
+        <h2>About Us</h2>
+        <p>SkyTravel Inc. is a leading online flight booking company that facilitates travelers in finding, comparing, and booking flights to various destinations around the world. Established in 20XX, SkyTravel has rapidly become a trusted platform for both leisure and business travelers seeking convenient and cost-effective ways to plan their air travel.</p>
+        <h2>Key Features:</h2>
+        <p><b>User-Friendly Platform: </b> SkyTravel offers a user-friendly website and mobile app that allows customers to easily search for flights based on their preferences, such as departure city, destination, dates, and budget.</p>
+        <p><b>Flight Comparison:</b> The platform aggregates flight information from numerous airlines, providing customers with a comprehensive overview of available options. This empowers travelers to compare prices, flight durations, layovers, and other relevant details.</p>
+        <p><b>Real-Time Pricing:</b>SkyTravel provides real-time updates on flight prices and availability, ensuring that customers receive accurate information before making their booking decisions.</p>
+        <p><b>Customized Recommendations:</b>By utilizing user data and preferences, SkyTravel's recommendation engine suggests personalized flight options that align with the customer's travel history and preferences.</p>
+        <p><b>Mission:</b> <br>SkyTravel's mission is to simplify and enhance the travel experience for individuals and businesses alike. By offering a seamless platform that empowers travelers to find the best flight options at the most competitive prices, SkyTravel aims to connect the world through hassle-free air travel.</p>
+        <p><b>Vision:</b> <br>SkyTravel envisions a future where travel planning is accessible, efficient, and tailored to each traveler's needs. Through innovative technology and a customer-centric approach, SkyTravel seeks to remain at the forefront of the online travel industry.</p>
+        <section id="contact us">
+            <caption>--Contact us</caption><br>
+            <h1>Contact Us</h1>
+            <p>Contact us through</p>
+            <p><b>Email: </b><a href="mailto:mohdfaizaansharief@gmail.com">mohdfaizaansharief@gmail.com</a></p>
+            <p><b>Phone Number: </b> <a href="tel:+91 9100412892">+91 9100412892</a></p>
+        </section>
+        <section class="popularsection">
+            <caption>--popular destination section</caption>
+            <h3>Maldive</h3>
+            <img src="https://media2.thrillophilia.com/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg?width=975&height=600" alt="maldives" width="400px">
+            <h3>New York City</h3>
+            <img src="https://freedomdestinations.co.uk/wp-content/uploads/Manhattan-Islan.jpg" alt="new York city" width="400px">
+            <h3>Taj Mahal</h3>
+            <img src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/agra/agra-tajmahal-10.jpg/_jcr_content/renditions/cq5dam.web.1800.600.jpeg" width="500px" alt="Taj Mahal">
+            <h3>Singapore</h3>
+            <img src="https://santamonicaedu.in/wp-content/uploads/2021/09/Singapore_place.jpg" alt="Singapore" width="400px" height="300px">
+        </section>
+    </section><br>
+    <section>
+        <caption>--Faq section</caption>
+        <h1>FAQ'S (Frequently Asked Questions)</h1>
+        <p>Q. How does SkyTravel work?
+        <br>A. SkyTravel is an online platform that allows you to search for and book flights to various destinations. You can enter your departure city, destination, travel dates, and preferences to find a list of available flights from different airlines. You can then compare options and choose the one that best suits your needs.</p>
+        <p>Q. Is SkyTravel affiliated with any specific airlines?
+        <br>A. No, SkyTravel is not affiliated with any specific airlines. We aggregate flight information from a wide range of airlines to provide you with a comprehensive list of options.</p>
+        <p>Q. Are the prices on SkyTravel accurate and up-to-date?
+        <br>A. Yes, we strive to provide real-time updates on flight prices and availability. However, prices can change rapidly, so we recommend booking your flight as soon as you find a suitable option to secure the displayed price.</p>
+        <p>Q. How do I make payments for my bookings?
+        <br>A. SkyTravel offers secure payment options through various payment gateways. You can use credit cards, debit cards, and other accepted methods to complete your booking.
+        </p>
+    </section>
+    <footer>
+        <caption>--Footer section</caption>
+        <h2>Footer</h2>
+        <a href="#Home">Home</a>
+        <a href="#purpose">Purpose</a>
+        <a href="#cust_review">Customer Review</a>
+        <a href="#flight_experience">Flight Experience</a>
+        <a href="#review_form">Review Form</a>
+        <a href="#flight_section">Flight Section</a><br>
+        &copy; 2023 SkyTravel Inc. All rights reserved.
+        <p><b>Follow us on:</b></p>
+        <a href="www.instagram.com">Instagram</a>
+        <a href="www.facebook.com">Facebook</a>
+        <a href="www.twitter.com">Twitter</a>
+    </footer>
+</body>
+>>>>>>> c5daad69815056855532e245d63d5e62563d13bc
 </html>
