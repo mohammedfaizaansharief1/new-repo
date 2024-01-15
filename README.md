@@ -13,4 +13,4 @@ New_repo
 SYSTEM COMPAQ
 >>>>>>> c5daad69815056855532e245d63d5e62563d13bc
 
-<a href="https://app.daily.dev/DailyDevTips"><img src="https://github.com/mohammedfaizaansharief1/new-repo/blob/master/devcard.svg" width="400" alt="Mohammed Faizaan Sharief's Dev Card"/></a>
+<a href="https://app.daily.dev/DailyDevTips"><img src="https://github.com/mohammedfaizaansharief1/new-repo/blob/main/devcard.svg" width="400" alt="Mohammed Faizaan Sharief's Dev Card"/></a>
