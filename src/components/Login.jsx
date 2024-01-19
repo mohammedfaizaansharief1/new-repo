@@ -23,7 +23,7 @@ const Login = () => {
     setErrMessage(errmsg)
     if(errmsg) return;
 
-    if(login){
+    if(!login){
       createUserWithEmailAndPassword(auth,email,password)
       .then((userCredential)=>{
         // Signed Up
