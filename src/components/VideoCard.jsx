@@ -1,7 +1,7 @@
 // import React from 'react'
 
 const VideoCard = ({title, channelTitle,thumbnails}) => {
-    // console.log(title,channelTitle,thumbnails)
+    console.log(title,channelTitle,thumbnails)
 
     
   return (

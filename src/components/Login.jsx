@@ -1,6 +1,6 @@
 // import React, { useRef, useState } from "react";
 import {useState} from "react";
-import { Validate } from "../utils/validate";
+import { Validate} from "../utils/validate";
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
@@ -23,7 +23,7 @@ const Login = () => {
     setErrMessage(errmsg)
     if(errmsg) return;
 
-    if(login){
+    if(!login){
       createUserWithEmailAndPassword(auth,email,password)
       .then((userCredential)=>{
         // Signed Up
