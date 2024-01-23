@@ -1,6 +1,7 @@
 // import React from 'react'
+// import PropTypes from 'prop-types'; // ES6
 
-const VideoCard = ({title, channelTitle,thumbnails}) => {
+const VideoCard = (title, channelTitle,thumbnails) => {
     // console.log(title,channelTitle,thumbnails)
 
     
@@ -15,6 +16,7 @@ const VideoCard = ({title, channelTitle,thumbnails}) => {
         <img src={thumbnails} alt="" />
         <h1>{title}</h1>
         <h3>{channelTitle}</h3>
+       
     </div>
   )
 }

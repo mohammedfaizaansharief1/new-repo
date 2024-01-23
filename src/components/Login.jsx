@@ -13,6 +13,7 @@ const Login = () => {
   let [password, setPassword] = useState("");
   let [email, setEmail] = useState("");
   let [errMessage, setErrMessage] = useState(null);
+  // let [loggedIn, setLoggedIn] = use
 
   function handleRegistration() {
     setLogin(!login);

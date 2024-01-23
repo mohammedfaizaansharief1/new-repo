@@ -3,34 +3,36 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import Login from './components/Login.jsx'
-import Browse from './components/Browse.jsx'
+import Home from './components/Home.jsx'
 import { RouterProvider,createBrowserRouter} from "react-router-dom"
 import Video from './components/Video.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element : <App/>,
-    // errorElement: <ErrorPage/>,
+    path: '/',
+    element: <App />,
     children: [
       {
-        path: "/",
-        element: <Login/>,
+        path: '/login',
+        element: <Login />,
       },
       {
-        path: "/browse",
-        element: <Browse/>,
+        path: '/home',
+        element: <Home />,
       },
       {
-        path: "/browse/watch",
-        element: <Video/>
-      }
-    ]
-  }
-])
-ReactDOM.createRoot(document.getElementById('root')).render(
+        path: '/watch',
+        element: <Video />,
+      },
+    ],
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   // <React.StrictMode>
-  //   <App />
-  <RouterProvider router={router}></RouterProvider>
-  // </React.StrictMode>,
-)
+    <RouterProvider router={router}>
+      {/* <App /> */}
+    </RouterProvider>
+  // </React.StrictMode>
+);
