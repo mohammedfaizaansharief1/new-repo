@@ -6,12 +6,18 @@ import { auth } from "../utils/firebase";
 import { useUserContext } from "../context/AddUserContext";
 import {Link} from "react-router-dom"
 import { useFetch } from '../hooks/useFetch';
+// import 'dotenv/config'
 
 const Header = () => {
   const [searchVal,setSearchVal] = useState("")
   let [resData,setResData] = useState("")
   let { user } = useUserContext();
   let [suggValues,setSuggValues] = useState(false)
+
+  // const apiKey = process.env.Youtube_Api_Key;
+  // const apiUrl = process.env.REACT_APP_API_URL;
+  // console.log(apiKey)
+
   function handleSignOut() {
     // const auth = getAuth()
     signOut(auth)
@@ -25,7 +31,7 @@ const Header = () => {
   }
   async function ResVideoList(){
     let res = await useFetch(
-      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=AIzaSyCS8mGrSJW8BEopuoQDXMxAn5vOs6ZEjYg"
+      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=${(import.meta.env).VITE_REACT_API_KEY}`
     )
     setResData(res.items)
   }
@@ -95,9 +101,14 @@ const Header = () => {
                 </div>
               )}
             </div>
+            
           </>
         )}
       </div>
+      {/* <p>
+        {JSON.stringify(import.meta.env)}
+      </p> */}
+      {/* {console.log((import.meta.env).VITE_REACT_API_KEY)} */}
     </div>
   );
 };

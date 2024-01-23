@@ -10,7 +10,7 @@ const VideoList = () => {
 
   async function ResVideoList() {
     let res = await useFetch(
-      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=30&regionCode=IN&key=AIzaSyCS8mGrSJW8BEopuoQDXMxAn5vOs6ZEjYg"
+      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=30&regionCode=IN&key=${(import.meta.env).VITE_REACT_API_KEY}`
     );
     setResData(res.items);
   }
@@ -41,6 +41,7 @@ const VideoList = () => {
             </div>
           </Link>
         ))}
+        {/* <p>{JSON.stringify(import.meta.env)}</p> */}
       </div>
     </>
   );
